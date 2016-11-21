@@ -1,0 +1,28 @@
+.flex{
+     display: flex;
+      flex-direction: row;
+      padding: 10px;
+}
+
+.tema {
+  
+  width: 60%;
+  align-content: flex-start;
+}
+.padre {
+  width: 40%;
+  align-content: flex-start;
+}
+ .flex > div
+   {
+      -webkit-flex: 1 1 auto;
+      flex: 1 1 auto;
+      padding: 10px;
+
+      width: 50%; /* To make the transition work nicely.  (Transitions to/from
+                      "width:auto" are buggy in Gecko and Webkit, at least.
+                      See http://bugzil.la/731886 for more info.) */
+
+      -webkit-transition: width 0.7s ease-out;
+      transition: width 0.7s ease-out;
+   }
